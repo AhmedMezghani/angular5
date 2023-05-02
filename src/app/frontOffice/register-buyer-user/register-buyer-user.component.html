@@ -1,0 +1,64 @@
+<app-preloader-user *ngIf="isLoading"></app-preloader-user>
+<div class="body-overlay" id="body-overlay"></div>
+
+<app-navbar-user></app-navbar-user>
+<br><br><br>
+<!-- signup-page-Start -->
+<div class="signup-page-area pd-top-120 pd-bottom-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="section-title text-center">
+        <h6 class="sub-title double-line">Client Registration</h6>
+        <h2 class="title">Shop now, sign up.</h2>
+      </div>
+      <div class="col-xl-6 col-lg-7">
+        <form class="signin-inner"(ngSubmit)="register()">
+          <div class="row">
+            <div class="col-12">
+              <div class="single-input-inner style-bg-border">
+                <input
+                  name="firstname"
+                  [(ngModel)]="registerRequest.firstname"
+                  type="text"
+                  placeholder="First Name">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="single-input-inner style-bg-border">
+                <input
+                  name="firstname"
+                  [(ngModel)]="registerRequest.lastname"
+                  type="text"
+                  placeholder="Last Name">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="single-input-inner style-bg-border">
+                <input
+                  type="email"
+                  name="email"
+                  [(ngModel)]="registerRequest.email"
+                  placeholder="Email">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="single-input-inner style-bg-border">
+                <input
+                  type="password"
+                  name="password"
+                  [(ngModel)]="registerRequest.password"
+                  placeholder="Password">
+              </div>
+            </div>
+
+            <div class="col-12 mb-4">
+              <button type="submit" class="btn btn-base w-100">Create Account</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- signup-page-end -->
+<app-footer-user></app-footer-user>

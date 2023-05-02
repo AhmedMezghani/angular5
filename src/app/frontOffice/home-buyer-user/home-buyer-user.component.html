@@ -1,0 +1,890 @@
+
+<div class="body-overlay" id="body-overlay"></div>
+
+<!----------------------------------------------------------------------------->
+<!--navbar buyer-->
+<!-- navbar start -->
+<div class="navbar-area">
+  <!-- navbar top start -->
+  <div class="navbar-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-md-left text-center">
+          <ul>
+            <li><p><i class="fa fa-map-marker"></i> 2072 Pinnickinick Street, WA 98370</p></li>
+            <li><p><i class="fa fa-envelope-o"></i>  noreply.pidev@gmail.com</p></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="topbar-right text-md-right text-center">
+            <li class="social-area">
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-area-1 navbar-area navbar-expand-lg">
+    <div class="container nav-container">
+      <div class="responsive-mobile-menu">
+        <button class="menu toggle-btn d-block d-lg-none" data-target="#edumint_main_menu"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-left"></span>
+          <span class="icon-right"></span>
+        </button>
+      </div>
+      <div class="logo">
+        <img src="/assets/front/img/logococo.png" alt="img">
+      </div>
+      <div class="collapse navbar-collapse" id="edumint_main_menu">
+        <ul class="navbar-nav menu-open">
+          <li class="menu-item-has-children current-menu-item">
+            <a href="#">Home</a>
+            <ul class="sub-menu">
+              <li><a href="index.html">Home 01</a></li>
+              <li><a href="index-2.html">Home 02</a></li>
+              <li><a href="index-3.html">Home 03</a></li>
+            </ul>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="#">Course</a>
+            <ul class="sub-menu">
+              <li><a href="course.html">Course</a></li>
+              <li><a href="course-details.html">Course Single</a></li>
+            </ul>
+          </li>
+          <li >
+            <a [routerLink]="['/user', 'buyer',getUserId(), 'chat']">Chat</a>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="#">Pages</a>
+            <ul class="sub-menu">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="event.html">Event</a></li>
+              <li><a href="event-details.html">Event Details</a></li>
+              <li><a href="team.html">Instructor</a></li>
+              <li><a href="team-details.html">Instructor Details</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="#">Blog</a>
+            <ul class="sub-menu">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="blog-grid.html">Blog Grid</a></li>
+              <li><a href="blog-details.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-right-part nav-right-part-desktop">
+        <a class="btn btn-base" (click)="logout()">Sign Out</a>
+        <a class="search-bar" href="#"><i class="fa fa-search"></i></a>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- navbar end -->
+
+<!--navbar buyer-->
+<app-banner-user></app-banner-user>
+<!-- course area start -->
+<div class="course-area pd-top-100 pd-bottom-90">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-lg-10 col-md-11">
+        <div class="section-title style-white text-center">
+          <h2 class="title">Top-Selling Items</h2>
+        </div>
+      </div>
+    </div>
+    <div class="edmt-nav-tab style-white text-center">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Graphics & Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Digital Marketing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Writing & Translation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Music & Audio</a>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/1.png" alt="img"></span>
+                    <span class="align-self-center">Nancy Reyes</span>
+                  </div>
+                  <h6><a href="course-details.html">Fox nymphs grab quick-jived waltz. Brick quiz whangs</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.3
+                        <span>(23)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$54.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/2.png" alt="img"></span>
+                    <span class="align-self-center">Joe Powell</span>
+                  </div>
+                  <h6><a href="course-details.html">Aenean sed nibh a magna posuere tempo faucib</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.3
+                        <span>(23)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$54.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/3.png" alt="img"></span>
+                    <span class="align-self-center">Timothy Willis</span>
+                  </div>
+                  <h6><a href="course-details.html">Praesent eu dolor eu orci vehicula euismod</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.9
+                        <span>(73)</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="price text-right">
+                        Price: <span>$74.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/4.png" alt="img"></span>
+                    <span class="align-self-center">Walter Griffin</span>
+                  </div>
+                  <h6><a href="course-details.html">Duis vestibulum elit vel neque pharetra vulputate</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.8
+                        <span>(53)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$64.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/5.png" alt="img"></span>
+                    <span class="align-self-center">Aaron Powell</span>
+                  </div>
+                  <h6><a href="course-details.html">Quisque suscipit ipsum est, eu venenatis leo ornare eget</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.5
+                        <span>(21)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$34.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/6.png" alt="img"></span>
+                    <span class="align-self-center">Randy Hart</span>
+                  </div>
+                  <h6><a href="course-details.html">Duis rhoncus dui venenatis consequat porttito</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.4
+                        <span>(20)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$55.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/3.png" alt="img"></span>
+                    <span class="align-self-center">Timothy Willis</span>
+                  </div>
+                  <h6><a href="course-details.html">Praesent eu dolor eu orci vehicula euismod</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.9
+                        <span>(73)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$74.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/4.png" alt="img"></span>
+                    <span class="align-self-center">Walter Griffin</span>
+                  </div>
+                  <h6><a href="course-details.html">Duis vestibulum elit vel neque pharetra vulputate</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.8
+                        <span>(53)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$64.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/5.png" alt="img"></span>
+                    <span class="align-self-center">Aaron Powell</span>
+                  </div>
+                  <h6><a href="course-details.html">Quisque suscipit ipsum est, eu venenatis leo ornare eget</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.5
+                        <span>(21)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$34.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/6.png" alt="img"></span>
+                    <span class="align-self-center">Randy Hart</span>
+                  </div>
+                  <h6><a href="course-details.html">Duis rhoncus dui venenatis consequat porttito</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.4
+                        <span>(20)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$55.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/1.png" alt="img"></span>
+                    <span class="align-self-center">Nancy Reyes</span>
+                  </div>
+                  <h6><a href="course-details.html">Fox nymphs grab quick-jived waltz. Brick quiz whangs</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.3
+                        <span>(23)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$54.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/2.png" alt="img"></span>
+                    <span class="align-self-center">Joe Powell</span>
+                  </div>
+                  <h6><a href="course-details.html">Aenean sed nibh a magna posuere tempo faucib</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.3
+                        <span>(23)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$54.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/4.png" alt="img"></span>
+                    <span class="align-self-center">Walter Griffin</span>
+                  </div>
+                  <h6><a href="course-details.html">Duis vestibulum elit vel neque pharetra vulputate</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.8
+                        <span>(53)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$64.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/1.png" alt="img"></span>
+                    <span class="align-self-center">Nancy Reyes</span>
+                  </div>
+                  <h6><a href="course-details.html">Fox nymphs grab quick-jived waltz. Brick quiz whangs</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.3
+                        <span>(23)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$54.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/5.png" alt="img"></span>
+                    <span class="align-self-center">Aaron Powell</span>
+                  </div>
+                  <h6><a href="course-details.html">Quisque suscipit ipsum est, eu venenatis leo ornare eget</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.5
+                        <span>(21)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$34.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/2.png" alt="img"></span>
+                    <span class="align-self-center">Joe Powell</span>
+                  </div>
+                  <h6><a href="course-details.html">Aenean sed nibh a magna posuere tempo faucib</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.3
+                        <span>(23)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$54.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/3.png" alt="img"></span>
+                    <span class="align-self-center">Timothy Willis</span>
+                  </div>
+                  <h6><a href="course-details.html">Praesent eu dolor eu orci vehicula euismod</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.9
+                        <span>(73)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$74.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/6.png" alt="img"></span>
+                    <span class="align-self-center">Randy Hart</span>
+                  </div>
+                  <h6><a href="course-details.html">Duis rhoncus dui venenatis consequat porttito</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.4
+                        <span>(20)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$55.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/3.png" alt="img"></span>
+                    <span class="align-self-center">Timothy Willis</span>
+                  </div>
+                  <h6><a href="course-details.html">Praesent eu dolor eu orci vehicula euismod</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.9
+                        <span>(73)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$74.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/6.png" alt="img"></span>
+                    <span class="align-self-center">Randy Hart</span>
+                  </div>
+                  <h6><a href="course-details.html">Duis rhoncus dui venenatis consequat porttito</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.4
+                        <span>(20)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$55.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/4.png" alt="img"></span>
+                    <span class="align-self-center">Walter Griffin</span>
+                  </div>
+                  <h6><a href="course-details.html">Duis vestibulum elit vel neque pharetra vulputate</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.8
+                        <span>(53)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$64.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/1.png" alt="img"></span>
+                    <span class="align-self-center">Nancy Reyes</span>
+                  </div>
+                  <h6><a href="course-details.html">Fox nymphs grab quick-jived waltz. Brick quiz whangs</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.3
+                        <span>(23)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$54.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/5.png" alt="img"></span>
+                    <span class="align-self-center">Aaron Powell</span>
+                  </div>
+                  <h6><a href="course-details.html">Quisque suscipit ipsum est, eu venenatis leo ornare eget</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.5
+                        <span>(21)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$34.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-course-inner">
+              <div class="thumb">
+                <img src="/assets/front/img/7.png" alt="img">
+              </div>
+              <div class="details">
+                <div class="details-inner">
+                  <div class="emt-user">
+                    <span class="u-thumb"><img src="/assets/front/img/author/2.png" alt="img"></span>
+                    <span class="align-self-center">Joe Powell</span>
+                  </div>
+                  <h6><a href="course-details.html">Aenean sed nibh a magna posuere tempo faucib</a></h6>
+                </div>
+                <div class="emt-course-meta">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="rating">
+                        <i class="fa fa-star"></i> 4.3
+                        <span>(23)</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="price text-right">
+                        Price: <span>$54.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- course area End -->
+<app-footer-user></app-footer-user>
+
+

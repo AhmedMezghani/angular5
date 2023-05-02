@@ -1,0 +1,214 @@
+<app-preloader-user *ngIf="isLoading"></app-preloader-user>
+<div class="body-overlay" id="body-overlay"></div>
+
+<!----------------------------------------------------------------------------->
+<!--navbar buyer-->
+<!-- navbar start -->
+<div class="navbar-area">
+  <!-- navbar top start -->
+  <div class="navbar-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-md-left text-center">
+          <ul>
+            <li><p><i class="fa fa-map-marker"></i> 2072 Pinnickinick Street, WA 98370</p></li>
+            <li><p><i class="fa fa-envelope-o"></i>  noreply.pidev@gmail.com</p></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="topbar-right text-md-right text-center">
+            <li class="social-area">
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-area-1 navbar-area navbar-expand-lg">
+    <div class="container nav-container">
+      <div class="responsive-mobile-menu">
+        <button class="menu toggle-btn d-block d-lg-none" data-target="#edumint_main_menu"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-left"></span>
+          <span class="icon-right"></span>
+        </button>
+      </div>
+      <div class="logo">
+        <img src="/assets/front/img/logococo.png" alt="img">
+      </div>
+      <div class="collapse navbar-collapse" id="edumint_main_menu">
+        <ul class="navbar-nav menu-open">
+          <li class="menu-item-has-children current-menu-item">
+            <a href="#">Home</a>
+            <ul class="sub-menu">
+              <li><a href="index.html">Home 01</a></li>
+              <li><a href="index-2.html">Home 02</a></li>
+              <li><a href="index-3.html">Home 03</a></li>
+            </ul>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="#">Course</a>
+            <ul class="sub-menu">
+              <li><a href="course.html">Course</a></li>
+              <li><a href="course-details.html">Course Single</a></li>
+            </ul>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="#">Pages</a>
+            <ul class="sub-menu">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="event.html">Event</a></li>
+              <li><a href="event-details.html">Event Details</a></li>
+              <li><a href="team.html">Instructor</a></li>
+              <li><a href="team-details.html">Instructor Details</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="#">Blog</a>
+            <ul class="sub-menu">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="blog-grid.html">Blog Grid</a></li>
+              <li><a href="blog-details.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-right-part nav-right-part-desktop">
+        <a class="btn btn-base" (click)="logout()">Sign Out</a>
+        <a class="search-bar" href="#"><i class="fa fa-search"></i></a>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- navbar end -->
+
+<!--navbar buyer-->
+<app-banner-user></app-banner-user>
+<!-- course area start -->
+<div class="course-area pd-top-100 pd-bottom-90">
+  <div class="container">
+    <div class="footer-subscribe">
+      <div class="container">
+
+        <form class="footer-subscribe-inner" (ngSubmit)="unsubscribe()">
+
+          <div class="row justify-content-center">
+            <div class="col-lg-5">
+              <div class="single-input-inner style-border-bottom">
+                <input [(ngModel)]="email" [ngModelOptions]="{standalone: true}" placeholder="Enter your email" type="email" class="form-control" id="email" required>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <button type="submit" class="btn btn-base w-100">Unsubscribe</button>
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- course area End -->
+<!-- footer area start -->
+<footer class="footer-area bg-gray">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="widget widget_contact">
+            <h4 class="widget-title">Contact Us</h4>
+            <ul class="details">
+              <li><i class="fa fa-map-marker"></i> 420 Love Sreet 133/2 Street NewYork</li>
+              <li><i class="fa fa-envelope"></i> info.contact@gmail.com</li>
+              <li><i class="fa fa-phone"></i> 012 345 678 9101</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="widget widget_nav_menu">
+            <h4 class="widget-title">Course</h4>
+            <ul>
+              <li><a href="course.html">Branding design</a></li>
+              <li><a href="course.html">Ui/Ux designing </a></li>
+              <li><a href="course.html">Make Elements</a></li>
+              <li><a href="course.html">Business</a></li>
+              <li><a href="course.html">Graphics design</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="widget widget_blog_list">
+            <h4 class="widget-title">News & Blog</h4>
+            <ul>
+              <li>
+                <h6><a href="blog-details.html">Big Ideas Of Business Branding Info.</a></h6>
+                <span class="date"><i class="fa fa-calendar"></i>December 7, 2021</span>
+              </li>
+              <li>
+                <h6><a href="blog-details.html">Ui/Ux Ideas Of Business Branding Info.</a></h6>
+                <span class="date"><i class="fa fa-calendar"></i>December 7, 2021</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="widget widget_contact">
+            <h4 class="widget-title">Twitter Feed</h4>
+            <ul class="details">
+              <li>
+                <i class="fa fa-twitter"></i>
+                Simply dummy brand  <a href="#">https//tweets/c3l.com</a>
+                <div class="time">9 Hours ago</div>
+              </li>
+              <li>
+                <i class="fa fa-twitter"></i>
+                Simply dummy brand  <a href="#">https//tweets/c7l.com</a>
+                <div class="time">9 Hours ago</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 align-self-center">
+          <a href="index.html"><img src="/assets/front/img/logococo.png" alt="img"></a>
+        </div>
+        <div class="col-lg-4  col-md-6 order-lg-12 text-md-right align-self-center">
+          <ul class="social-media mt-md-0 mt-3">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 order-lg-8 text-lg-center align-self-center mt-lg-0 mt-3">
+          <p>copyright 2023 by Valhalla Team</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer area end -->
+
+<!-- back to top area start -->
+<div class="back-to-top">
+  <span class="back-top"><i class="fa fa-angle-up"></i></span>
+</div>
+<!-- back to top area end -->
+
+
+

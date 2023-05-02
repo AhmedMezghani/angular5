@@ -1,0 +1,51 @@
+<div  >
+
+
+  <form class="d-flex align-content-center align-items-center flex-column" [formGroup]="promotionForm" (ngSubmit)="onSubmit()">
+
+
+    <div class="col-md-6 center">
+      <label for="nom">Nom :</label>
+      <input class="form-control"  type="text" id="nom" formControlName="nom">
+      <div *ngIf="promotionForm.get('nom').invalid && (promotionForm.get('nom').dirty || promotionForm.get('nom').touched)">
+        <div  *ngIf="promotionForm.get('nom').errors['required']">Le nom est obligatoire</div>
+      </div>
+    </div>
+
+
+    <div class="col-md-6 center">
+      <label for="description">Description :</label>
+      <input class="form-control"  type="text" id="description" formControlName="description">
+      <div *ngIf="promotionForm.get('description').invalid && (promotionForm.get('description').dirty || promotionForm.get('description').touched)">
+        <div  *ngIf="promotionForm.get('description').errors['required']">La description est obligatoire</div>
+      </div>
+    </div>
+
+    <div class="col-md-6 center">
+      <label for="pourcentage">Porcentage :</label>
+      <input class="form-control "  type="text" id="pourcentage" formControlName="pourcentage" required>
+      <div *ngIf="promotionForm.get('pourcentage').invalid && (promotionForm.get('pourcentage').dirty || promotionForm.get('pourcentage').touched)">
+        <div  *ngIf="promotionForm.get('pourcentage').errors['required']">Le pourcentage est obligatoire</div>
+      </div>
+    </div>
+
+    <div class="col-md-6 center mb-2">
+      <label for="PromotionDate">Date promotion :</label>
+      <input class="form-control" type="date" id="PromotionDate" formControlName="PromotionDate" required>
+      <div *ngIf="promotionForm.get('PromotionDate').invalid && (promotionForm.get('PromotionDate').dirty || promotionForm.get('PromotionDate').touched)">
+        <div *ngIf="promotionForm.get('PromotionDate').errors['required']">La date de promotion est obligatoire</div>
+      </div>
+    </div>
+
+
+    <div class="col-md-6 center">
+      <label for="duree">Durée :</label>
+      <input class="form-control"  type="text" id="duree" formControlName="duree" required>
+      <div *ngIf="promotionForm.get('duree').invalid && (promotionForm.get('duree').dirty || promotionForm.get('duree').touched)">
+        <div *ngIf="promotionForm.get('duree').errors['required']">Le duree est obligatoire</div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit" [disabled]="promotionForm.invalid">Ajouter</button>
+  </form>
+</div>

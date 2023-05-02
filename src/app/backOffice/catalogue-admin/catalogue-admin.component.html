@@ -1,0 +1,56 @@
+
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+  <div class="layout-container">
+    <app-menu-admin></app-menu-admin>
+    <div class="layout-page">
+      <app-navbar-admin></app-navbar-admin>
+      <div class="content-wrapper">
+        <div class="container-xxl flex-grow-1 container-p-y">
+          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard /</span> Show Catalogues</h4>
+          <!-- Basic Bootstrap Table -->
+          <div class="card">
+            <h5 class="card-header">Table Basic</h5>
+            <div class="table-responsive text-nowrap">
+              <table class="table">
+                <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>
+                    <span style="margin-right: 30px;">Name</span>
+                    <span class="tf-icons bx bx-up-arrow-alt btn-outline-primary" (click)="onSortChange('name,asc')"></span>
+                    <span class="tf-icons bx bx-down-arrow-alt btn-outline-info" (click)="onSortChange('name,desc')"></span>
+                  </th>
+                  <th>
+                    <span style="margin-right: 120px;">DateCreation</span>
+                    <span class="tf-icons bx bx-up-arrow-alt btn-outline-primary" (click)="onSortChange('dateCreation,asc')"></span>
+                    <span class="tf-icons bx bx-down-arrow-alt btn-outline-info"(click)="onSortChange('dateCreation,desc')"></span></th>
+
+
+                </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                <tr *ngFor="let catalogue of catalogues | paginate: { itemsPerPage: 10, currentPage: pageNumber }" (dblclick)="(catalogue.id)">
+                  <td><span class="badge badge-center rounded-pill bg-label-primary">{{catalogue.id}}</span></td>
+                  <td>{{catalogue.name}} {{catalogue.name}}</td>
+                  <td>{{catalogue.dateCreation}}</td>
+
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--/ Basic Bootstrap Table -->
+
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <pagination-controls (pageChange)="pageNumber = $event" ></pagination-controls>
+          </div>
+        </div>
+        <app-footer-admin></app-footer-admin>
+      </div>
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+  </div>
+</div>
